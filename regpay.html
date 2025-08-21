@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<!-- Logo picture and mp4 video created on Canva https://www.canva.com/ -->
+<!-- https://www.w3schools.com/html/html_basic.asp. -->
+<!-- Navigation bar refer from https://www.youtube.com/watch?v=YesSVqjcDts -->
+<html>
+
+
+<!--Head-->
+    <head>
+	    <title> Magic Circus - Regpay </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="myscripts.js"></script>
+	</head>
+	
+<!--Body-->
+	<body>
+	
+	<!--'container', CSS refer-->
+	<div id="container">
+	    <div id="header"><!--'header', CSS refer-->
+		    <!--logo created on Canva-->
+		    <img src="Logo1.png" alt="Logo" width="200" height="200">
+			<h1> Magic Circus - Magical your Party!</h1>	
+		</div>
+		
+		<!--Navigationbar set, symbols from w3schools HTML symbols, code refer to Youtube viedio-->
+		<div id="navigationbar">
+		    <div id="navigation"><!--'navigationbar', 'navigation', CSS refer-->
+			<h2>M&#9752;C</h2>
+	        <ul>
+	            <li><a href="index.html"> &spades; Home </a></li>
+			
+			    <li><a href="services.html"> &clubs; Services </a></li>
+			
+			    <li><a href="faq.html"> &hearts; Frequently Asked Questions (FAQ) </a></li>
+			
+			    <li><a href="regpay.html"> &diams; Registration and Rental </a></li>
+		    </ul>
+			</div>
+		</div>
+		
+		<!--'content', CSS refer-->
+		<div id="content">
+		<!--'left', CSS refer-->
+		<h2 class="left"> &diams; Registration and Rental </h2>
+		<br>
+		
+		<!--'Create an Account' table-->
+		<table>
+		    <tr> 
+			    <!--span across columns--><!--"creat", JavaScript refer-->
+			    <th colspan="2"><h3 id="creat">Creat an Account</h3></th>
+			</tr>
+			<tr>
+			    <!--'Name' single line textbox-->
+			    <td><p> Name: <input type="text" Name="Name"></p></td>
+				<!--'Password' single line textbox-->
+				<td><p> Password: <input type="password" Name="Password"></p></td>
+			</tr>
+			<tr>
+			    <!--'Email' single line textbox-->
+			    <td><p> Email: <input type="text" Name="Email"></p></td>
+				<!--'Phone' single line textbox-->
+				<td><p> Phone: <input type="number" Name="Phone"></p></td>
+			</tr>
+			<tr>
+			<!--'Adress' single line textbox-->
+			    <td><p> Address: <input type="text" Name="Address"></p></td>
+				<!--JavaScript 'Register' submit button-->
+				<td><button type=button onclick="changecss()">Register</button></td>
+			</tr>	
+		</table>
+		
+		<br>
+		
+		<br>
+		<!--'Select Service' table-->
+		<table>
+		    <tr>
+			    <!--Span across columns-->
+			    <th colspan="2"> <h3>Select you service. For more info, please email us on info@migiccircus.co.nz</h3></th>
+			</tr>
+		    <tr>
+			    <!--'Name' single line textbox-->
+			    <td><p> Name: 
+		        <input type="text" Name="Name"></p></td>
+				<!--'Email' single line textbox-->
+				<td><p> Email: 
+		        <input type="text" Name="Email"></p> </td>
+			</tr>
+			<tr>
+			    <!--'Phone' single line textbox-->
+			    <td><p> Phone: 
+		        <input type="number" Name="Phone"></p></td>
+				
+				<!--'Please Select a Date and Time' datetime select-->
+				<td><p>Please Select a Date and Time:</p>
+		        <input type="datetime-local" name="mydateandtimefield" min="2020-09-12" max="2035-09-18"> </td>
+			</tr>
+			
+		    <tr> 
+			    <!--'Select Your Service' radio buttons-->
+			    <td><p> Select Your Service: 
+		            <form>
+		            <input type="radio" name="Service" value="Magician" checked> Magician <br>
+			        <input type="radio" name="Service" value="Clown" checked> Clown <br>
+			        <input type="radio" name="Service" value="Law" checked> Magician and Clown <br>
+		            </form></p></td>
+					<!--'Select Your Kids Age Range' drop-down list-->
+				<td><p> Select Your Kids Age Range: 
+		            <select name="Age">
+		            <option value="Select">Select Your Kids Age Range</option>
+		            <option value="1-4">1-4 </option>
+		            <option value="5-9"Selected>5-9</option>
+		            <option value="10+">10+</option>
+		            </select></p></td>
+			</tr>
+			
+			<tr>
+			    <!--'Select Venue' drop-down list-->
+			    <td> <p> Select Venue: 
+		            <select name="Venue">
+		            <option value="Select">Select Venue</option>
+		            <option value="Pipitea">Newtown </option>
+		            <option value="Newtown"Selected>Newtown</option>
+		            <option value="Petone">Petone</option>
+		            <option value="Lower Hutt">Lower Hutt</option>
+		            </select></p></td>
+				<!--'Additional Info' single line textbox-->
+				<td><p> Additional Info
+		        <input type="text" Name="Additional Info"></p></td>
+			</tr>
+			
+			<tr>
+			    <!--JavaScript 'check' button for affterpay price check-->
+			    <td><p> Your four interest-free payment with <img src="afterpay.jpg" alt="afterpay" width="50" height="30"></p>
+		        <form name="serviceprice" onsubmit="return performOp()" method="post">
+		        <input type="text" name="number">
+			    <input type="submit" name="Submit">
+		        </form></td>
+				<!--JavaScript 'submit' button for payment-->
+				<td><p> Credit Card Details:</p>
+		        <form name="practice" onsubmit="return validateForm()" method="post">
+			    <input type="number" name="Number">
+			    <input type="submit" name="Submit">
+			    </form></td>
+			</tr>
+		</table>	
+		</div>
+		<br>
+		
+		
+		<!--'footer', CSS refer-->
+	    <div id="footer">
+		    <!--'Contact Us' part-->
+			<p>Contact Us</p>
+			<p>Phone: 021 123 4567</p>
+			<p>Email: info@magiccircus.co.nz</P>
+			<a href="https://www.facebook.com/"> Our Facebook Page</a>
+			<br>
+			<a href="https://www.instagram.com/?hl=en">Our Instagram</a>
+			<p>Our Location: Kelburn, Wellington 6012</p>
+			
+		
+			<!--MP4 video created on Canva-->
+			<video width="160" height="120" autoplay muted>
+			<source src="Logo.mp4" type="video/mp4">
+		    <source src="Logo.ogg" type="video/ogg"></video>
+			<!--'date' datetime-local, JavaScript refer-->
+			<p id="date"></p>
+		</div>
+	</div>
+	
+	</body>
+	
+	
+	
+</html>

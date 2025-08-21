@@ -1,0 +1,135 @@
+/* Logo created by Canva https://www.canva.com/,
+ color and symbols refer from https://www.w3schools.com/Css/ 
+Navigation bar refer from https://www.youtube.com/watch?v=YesSVqjcDts */
+
+/*'body' background-color setting*/
+body {
+	background-color: #ffefd5; 
+}
+
+/*'h1' setting*/
+h1 {
+	font-family: arial;
+	text-align:center;
+	color: #FFEF00;
+}
+/*'h2' setting*/
+h2 {
+	text-decoration: underline;
+}
+
+/*'h3', setting*/
+h3 {
+	text-decoration: underline;
+	font-size: 22px;
+}
+
+/*'p' setting*/
+p{
+	font-weight:bold;
+	font-size: 18px;
+}
+
+/*'container' width setting*/
+#container {
+	width: 100%;
+}
+
+/*Navigationbar setting, part of setting refer from youtube viedio*/
+#navigationbar {
+	display: flex;
+	float: left;
+	position: static;
+	width:15%;
+	height: 1400px;
+}
+
+#navigationbar #navigation {
+	background: #4b4276;
+	padding: 30px 0;
+}
+/*Navigation 'h2', 'M&#9752;C' setting*/
+#navigationbar #navigation h2{
+	color: #fff;
+	text-align:center;
+	margin-bottom: 30px;
+}
+/* Navigation:box with a border around it, setting for top and bottom.*/
+#navigationbar #navigation ul li{
+	padding: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px soild rgba(225,225,225,0.05);
+}
+
+/*Navigation '&spades; Home', '&clubs; Services', '&hearts; Frequently Asked Questions (FAQ)', '&diams; Registration and Rental' block layout*/
+#navigationbar #navigation ul li a{
+	color:#bdb8d7;
+	display: block;
+}
+
+/*Navigationbar mouse over the link */
+#navigationbar #navigation ul li a:hover{
+	background-color: #594f8d;
+	color: #fff;
+}
+
+/*div id='content' setting*/
+#content {
+	background-color: #dff5f1;
+	float:left;
+	width:85%;
+	height: 1400px;
+	margin-bottom: 30px;
+}
+
+/* id='footer' setting*/
+#footer {
+	background-color: #8cd2de;
+	text-align: center;
+}
+
+/* id='header' setting with transition animation*/
+#header {
+	background-color: white;
+	margin-bottom:35px;
+	padding: 40px;
+	border: 5pc;
+	text-align: center;
+	transition-duration: 1s;
+}
+
+/*id='header' with transition animation, mouse over the link*/
+#header:hover{
+	background-color: #FFEF00;
+}
+
+/*class='lift' setting*/
+.left {
+	position:relative;
+	left:40px;
+}
+
+/*Width of text*/
+input[type=text], select {
+	width: 30%;
+}
+
+/*Width of password*/
+input [type=password], select {
+	width: 30%;
+}
+
+/*table background and border setting*/
+table, td, th {
+	border: 1px solid black;
+	background-color:#ffefd5;
+}
+
+/*table setting*/
+table{
+	width:600px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
